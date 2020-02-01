@@ -6,9 +6,8 @@
  <body>
 	<h1>POS System</h1>
 	<form name="pos">
-	**display input(prices) here***
-		<input type="" name="price">
-	<div>
+		<input type="text" name="price">
+	<div class="buttons">
 		<input type="button" value="1">
 		<input type="button" value="2">
 		<input type="button" value="3">
