@@ -6,25 +6,25 @@
  <body>
 	<h1>POS System</h1>
 	<form name="pos">
-		<input type="text" name="price">
+		<input class="pricetag" type="text" name="price">
 	<div class="buttons">
-		<input type="button" value="1">
-		<input type="button" value="2">
-		<input type="button" value="3">
-		<input type="button" value="Add Amount">
+		<input class="btn" type="button" value="1">
+		<input class="btn" type="button" value="2">
+		<input class="btn" type="button" value="3">
 		<br>
-		<input type="button" value="4">
-		<input type="button" value="5">
-		<input type="button" value="6">
-		<input type="button" value="Save Till">
+		<input class="btn" type="button" value="4">
+		<input class="btn" type="button" value="5">
+		<input class="btn" type="button" value="6">
 		<br>
-		<input type="button" value="7">
-		<input type="button" value="8">
-		<input type="button" value="9">
+		<input class="btn" type="button" value="7">
+		<input class="btn" type="button" value="8">
+		<input class="btn" type="button" value="9">
+		<input class="btn" id="save" type="button" value="Save Till">
 		<br>
-		<input type="button" value="C">
-		<input type="button" value="0">
-		<input type="button" value=".">
+		<input class="btn" type="button" value="C">
+		<input class="btn" type="button" value="0">
+		<input class="btn" type="button" value=".">
+		<input class="btn" id="add" type="button" value="Add Amount">
 		<br>
 	</div>
 	</form>
