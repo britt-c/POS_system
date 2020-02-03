@@ -11,25 +11,24 @@
 		<br>
 		<br>
 	<div class="buttons">
-		<input class="btn" type="button" value="1" onclick="pos.price.value += '1'">
-		<input class="btn" type="button" value="2" onclick="pos.price.value += '2'">
-		<input class="btn" type="button" value="3" onclick="pos.price.value += '3'">
+		<button class="btn" type="button" onclick="pos.price.value += '1'">1</button>
+		<button class="btn" type="button" onclick="pos.price.value += '2'">2</button>
+		<button class="btn" type="button" onclick="pos.price.value += '3'">3</button>
 		<br>
-		<input class="btn" type="button" value="4" onclick="pos.price.value += '4'">
-		<input class="btn" type="button" value="5" onclick="pos.price.value += '5'">
-		<input class="btn" type="button" value="6" onclick="pos.price.value += '6'">
+		<button class="btn" type="button" onclick="pos.price.value += '4'">4</button>
+		<button class="btn" type="button" onclick="pos.price.value += '5'">5</button>
+		<button class="btn" type="button" onclick="pos.price.value += '6'">6</button>
 		<br>
-		<input class="btn" type="button" value="7" onclick="pos.price.value += '7'">
-		<input class="btn" type="button" value="8" onclick="pos.price.value += '8'">
-		<input class="btn" type="button" value="9" onclick="pos.price.value += '9'">
+		<button class="btn" type="button" onclick="pos.price.value += '7'">7</button>
+		<button class="btn" type="button" onclick="pos.price.value += '8'">8</button>
+		<button class="btn" type="button" onclick="pos.price.value += '9'">9</button>
 		<br>
 		<button type="button" class="btn" disabled>💰</button>
-		<input class="btn" type="button" value="0" onclick="pos.price.value += '0'">
+		<button class="btn" type="button" onclick="pos.price.value += '0'">0</button>
 		<button type="button" class="btn" disabled>💰</button>
 		<br>
-		<input class="btn" id="add" type="button" value="+ Ledger">
-		<input class="btn" id="save" type="button" value="Save Till">	
-		<input class="btn" id="clear" type="button" value="C">
+		<input class="btn" id="add" type="submit" value="+ Ledger">
+		<button class="btn" id="clear" type="button">C</button>
 		<br>
 	</div>
 	</form>
@@ -39,6 +38,7 @@
 	<h1>Ledger</h1>
 		<div class="led-container">
 		</div>
+		<input class="btn" id="save" type="submit" value="Save Till">	
 	</div>
 	</div>
 	</div>

@@ -47,6 +47,9 @@ body {
 
 }
 
+#save {
+	bottom: 20px;
+}
 .column {
 	float:left;
 	width: 50%
@@ -56,4 +59,13 @@ body {
 	content: "";
 	display: table;
 	clear: both;
+}
+
+.led-container {
+	background-color: pink;
+	padding: 250px;
+	right: 40px;
+	overflow: scroll;
+	max-height: 500px;
+	max-width: 711px;
 }
