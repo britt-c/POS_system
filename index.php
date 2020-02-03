@@ -28,7 +28,7 @@
 		<button type="button" class="btn" disabled>💰</button>
 		<br>
 		<input class="btn" id="add" type="submit" value="+Ledger">
-		<input class="btn" id="clear" type="button" value="C">
+		<input class="btn" id="clear" type="button" value="C" onclick="pos.price.value = ''">
 		<br>
 	</div>
 	</form>
@@ -51,7 +51,9 @@
 				}	
 		?>
 		</div>
+	<form action="submit.php" method="post">
 		<input class="btn" id="save" type="submit" value="Save Till">	
+	</form>
 	</div>
 	</div>
 	</div>
