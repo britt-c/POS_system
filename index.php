@@ -6,29 +6,29 @@
  <body>
 	<div class="row">
 	<div class="column">
-	<form action="index.php" method="get" name="pos">
+	<form action="" method="get" name="pos">
 		<input class="pricetag" type="text" name="price" placeholder="12">
 		<br>
 		<br>
 	<div class="buttons">
-		<button class="btn" type="button" onclick="pos.price.value += '1'">1</button>
-		<button class="btn" type="button" onclick="pos.price.value += '2'">2</button>
-		<button class="btn" type="button" onclick="pos.price.value += '3'">3</button>
+		<input class="btn" type="button" value="1" onclick="pos.price.value += '1'">
+		<input class="btn" type="button" value="2" onclick="pos.price.value += '2'">
+		<input class="btn" type="button" value="3" onclick="pos.price.value += '3'">
 		<br>
-		<button class="btn" type="button" onclick="pos.price.value += '4'">4</button>
-		<button class="btn" type="button" onclick="pos.price.value += '5'">5</button>
-		<button class="btn" type="button" onclick="pos.price.value += '6'">6</button>
+		<input class="btn" type="button" value="4" onclick="pos.price.value += '4'">
+		<input class="btn" type="button" value="5" onclick="pos.price.value += '5'">
+		<input class="btn" type="button" value="6" onclick="pos.price.value += '6'">
 		<br>
-		<button class="btn" type="button" onclick="pos.price.value += '7'">7</button>
-		<button class="btn" type="button" onclick="pos.price.value += '8'">8</button>
-		<button class="btn" type="button" onclick="pos.price.value += '9'">9</button>
+		<input class="btn" type="button" value="7" onclick="pos.price.value += '7'">
+		<input class="btn" type="button" value="8" onclick="pos.price.value += '8'">
+		<input class="btn" type="button" value="9" onclick="pos.price.value += '9'">
 		<br>
 		<button type="button" class="btn" disabled>💰</button>
-		<button class="btn" type="button" onclick="pos.price.value += '0'">0</button>
+		<input class="btn" type="button" value="0" onclick="pos.price.value += '0'">
 		<button type="button" class="btn" disabled>💰</button>
 		<br>
-		<button class="btn" id="add" type="button">Ledger</button>
-		<button class="btn" id="clear" type="button">C</button>
+		<input class="btn" id="add" type="submit" value="+Ledger">
+		<input class="btn" id="clear" type="button" value="C">
 		<br>
 	</div>
 	</form>
@@ -37,7 +37,19 @@
 	<div class="ledger">
 	<h1>Ledger</h1>
 		<div class="led-container">
-		<?php echo $_GET["price"]; ?>
+
+		<?php 
+			$p = $_GET["price"];
+			$ledger = [];
+			array_push($ledger, $p);
+			$ledglength = count($ledger);
+			
+			for($x=0; $x < $ledglength; $x++)
+				{
+					echo $ledger[$x];
+					echo "<br>";
+				}	
+		?>
 		</div>
 		<input class="btn" id="save" type="submit" value="Save Till">	
 	</div>
