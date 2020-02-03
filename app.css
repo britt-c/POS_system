@@ -62,7 +62,7 @@ body {
 }
 
 .led-container {
-	background-color: pink;
+	border: 2px dotted grey;
 	padding: 250px;
 	right: 40px;
 	overflow: scroll;

@@ -1,4 +1,10 @@
 window.onload = ()=> {
 	let p = document.querySelector(".pricetag")
-	console.log(p.value)
+	let log = document.querySelector("#add")
+	let save = document.querySelector("#save")
+	let l = []
+	log.addEventListener("click", ()=> {
+		l.push(p)
+		console.log(l)
+	})
 } 
