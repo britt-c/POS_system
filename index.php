@@ -6,7 +6,7 @@
  <body>
 	<div class="row">
 	<div class="column">
-	<form name="pos">
+	<form action="index.php" method="get" name="pos">
 		<input class="pricetag" type="text" name="price" placeholder="12">
 		<br>
 		<br>
@@ -27,7 +27,7 @@
 		<button class="btn" type="button" onclick="pos.price.value += '0'">0</button>
 		<button type="button" class="btn" disabled>💰</button>
 		<br>
-		<input class="btn" id="add" type="submit" value="+ Ledger">
+		<button class="btn" id="add" type="button">Ledger</button>
 		<button class="btn" id="clear" type="button">C</button>
 		<br>
 	</div>
@@ -37,6 +37,7 @@
 	<div class="ledger">
 	<h1>Ledger</h1>
 		<div class="led-container">
+		<?php echo $_GET["price"]; ?>
 		</div>
 		<input class="btn" id="save" type="submit" value="Save Till">	
 	</div>
