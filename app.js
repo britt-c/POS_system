@@ -3,8 +3,8 @@ window.onload = ()=> {
 	let log = document.querySelector("#add")
 	let save = document.querySelector("#save")
 	let l = []
-	log.forEach(log => {
-		log.addEventListener("click", l.push(p))
+	log.addEventListener("click", ()=> {
+		l.push(p)
+		console.log(l)
 	})
-	console.log(l)
 } 
