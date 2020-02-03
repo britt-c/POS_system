@@ -6,7 +6,7 @@
  <body>
 	<div class="row">
 	<div class="column">
-	<form action="" method="get" name="pos">
+	<form action="" method="post" name="pos">
 		<input class="pricetag" type="text" name="price" placeholder="12">
 		<br>
 		<br>
@@ -36,10 +36,11 @@
 	<div class="column">
 	<div class="ledger">
 	<h1>Ledger</h1>
+		<form action="submit.php" method="post">
 		<div class="led-container">
 
 		<?php 
-			$p = $_GET["price"];
+			$p = $_POST["price"];
 			$ledger = [];
 			array_push($ledger, $p);
 			$ledglength = count($ledger);
@@ -51,8 +52,14 @@
 				}	
 		?>
 		</div>
-	<form action="submit.php" method="post">
-		<input class="btn" id="save" type="submit" value="Save Till">	
+		<button class="btn" id="save" name="saveledg" type="submit"  value="<?php
+			$ledglength = count($ledger);
+			
+			for($x=0; $x < $ledglength; $x++)
+				{
+					echo $ledger[$x];
+				}	
+			 ;?>" >Save Till</button>	
 	</form>
 	</div>
 	</div>
