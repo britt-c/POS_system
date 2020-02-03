@@ -1,3 +1,71 @@
-h1 {
-	color: red;
+body {
+	background-image: url("bkgrn.png");
+}
+
+.btn {
+	border-radius: 40%;
+	font-size: 100px;
+	padding: 10px;
+	width: 150px;
+	background-color: white;
+	border: 2px solid grey;
+}
+
+.btn:hover {
+	background-color: darkgrey;
+	transition-duration: 0.4s;
+}
+
+#save:hover, #add:hover {
+	background-color: limegreen;
+	transition-duration: 0.4s;
+}
+
+#clear:hover {
+	background-color: red;
+	transition-duration: 0.4s;
+}
+
+.pricetag {
+	padding: 10px;
+	width: 30%;
+	height: 60px;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+#save, #add {
+	font-size: 30px;
+	width: 170px;
+	border-radius: 20%;
+}
+
+#clear {
+	font-size: 30px;
+	width: 100px;
+	border-radius: 20%;
+
+}
+
+#save {
+	bottom: 20px;
+}
+.column {
+	float:left;
+	width: 50%
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.led-container {
+	background-color: pink;
+	padding: 250px;
+	right: 40px;
+	overflow: scroll;
+	max-height: 500px;
+	max-width: 711px;
 }
